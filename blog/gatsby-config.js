@@ -17,7 +17,8 @@ module.exports = {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: `http://localhost:1337`,
-        contentTypes: [`articles`, `users`],
+        queryLimit: 100,
+        contentTypes: [`article`],
         // Possibility to login with a strapi user, when content types are not publically available (optional).
         loginData: {
           identifier: "",
