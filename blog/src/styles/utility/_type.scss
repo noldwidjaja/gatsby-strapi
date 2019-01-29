@@ -1,5 +1,0 @@
-@each $size in $fontSizes {
-    .f_s\:#{$size} {
-        font-size: #{$size}px;
-    }
-}
