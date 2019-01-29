@@ -1,0 +1,24 @@
+@each $key, $value in $fontFamilies {
+    .f_f\:#{$key} {
+        font-family: #{$key}, sans-serif;
+    }
+
+    @font-face {
+        font-family: #{$key};
+        src: url('/static/fonts/#{$value}.woff2') format('woff2'),
+            url('/static/fonts/#{$value}.woff') format('woff'),
+            url('/static/fonts/#{$value}.otf') format('otf');
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+.f_w\:400 {
+    font-weight: 400;
+}
+.f_w\:600 {
+    font-weight: 600;
+}
+.f_w\:700 {
+    font-weight: 700;
+}

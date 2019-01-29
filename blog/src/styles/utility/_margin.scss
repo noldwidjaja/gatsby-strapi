@@ -1,0 +1,64 @@
+/*  Margin */
+
+@each $size in $sizes {
+    .m\:#{$size} {
+        margin: #{$size}px;
+    }
+    .m_t\:#{$size} {
+        margin-top: #{$size}px;
+    }
+    .m_l\:#{$size} {
+        margin-left: #{$size}px;
+    }
+    .m_r\:#{$size} {
+        margin-right: #{$size}px;
+    }
+    .m_b\:#{$size} {
+        margin-bottom: #{$size}px;
+    }
+
+    .m\:-#{$size} {
+        margin: -#{$size}px;
+    }
+    .m_t\:-#{$size} {
+        margin-top: -#{$size}px;
+    }
+    .m_l\:-#{$size} {
+        margin-left: -#{$size}px;
+    }
+    .m_r\:-#{$size} {
+        margin-right: -#{$size}px;
+    }
+    .m_b\:-#{$size} {
+        margin-bottom: -#{$size}px;
+    }
+
+    .p\:#{$size} {
+        padding: #{$size}px;
+    }
+
+    .p_t\:#{$size} {
+        padding-top: #{$size}px;
+    }
+    .p_l\:#{$size} {
+        padding-left: #{$size}px;
+    }
+    .p_r\:#{$size} {
+        padding-right: #{$size}px;
+    }
+    .p_b\:#{$size} {
+        padding-bottom: #{$size}px;
+    }
+}
+
+.p\:0 {
+    padding: 0px;
+}
+
+.m\:0 {
+    margin: 0px;
+}
+
+.m\:a {
+    margin: auto;
+}

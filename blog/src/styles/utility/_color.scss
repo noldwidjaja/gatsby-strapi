@@ -1,0 +1,20 @@
+@each $key, $value in $colors {
+	.f_c\:#{$key} {
+		color: #{$value};
+	}
+	.f_c\:hover\:#{$key}:hover {
+		color: #{$value};
+	}
+	.bg_c\:#{$key} {
+		background-color: #{$value};
+	}
+	.bg_c\:hover\:#{$key}:hover {
+		background-color: #{$value};
+	}
+	.b_c\:#{$key} {
+		border-color: #{$value};
+	}
+	.b_c\:hover\:#{$key}:hover {
+		border-color: #{$value};
+	}
+}

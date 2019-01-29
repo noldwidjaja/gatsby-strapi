@@ -1,0 +1,8 @@
+@each $size in $dimentionSizes {
+    .h\:#{$size} {
+        height: #{$size}px;
+    }
+    .w\:#{$size} {
+        width: #{$size}px;
+    }
+}
